@@ -36,3 +36,10 @@ y_test.txt --> test_y  <br />
 train_x merge test_x --> features_x <br />
 train_y merge test_y --> activity_y <br />
 train_subject merge test_subjec --> subject_train_test <br />
+
+
+# Completed Clean/Tidy Data <br />
+The file was extracted in a file called "tidy_data.txt". This file contain the clean data with the mean and standard deviation for each measurement along with Headers.
+
+
+
