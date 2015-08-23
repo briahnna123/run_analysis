@@ -59,8 +59,8 @@ colnames(features_x ) <- t(features[2]) # Take the Second Column values of featu
 
 # Step 5: Combine Create Complete Data Set and then Sort
 dataTable <- cbind(as.data.table(features_x, activity_y,subject_train_test ))
-dataTable$activityName <- as.character(dataTable$activityName)
-dataAggr<- aggregate(. ~ subject - active, data = dataTable, mean) 
+dataTable$activity <- as.character(dataTable$activity)
+dataTable<- aggregate(. ~ subject - active, data = dataTable, mean) 
 dataTable<- tbl_df(arrange(dataTable,subject,active))
 
 # Step 6: Subset the measurements on the mean and stdev. for each measurement.
