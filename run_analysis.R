@@ -25,6 +25,7 @@ unlink(temp)
 setwd("~/Desktop/UCI_HAR_Dataset") # Set WD
 
 
+
 features <- read.table(file = "features.txt") # Bring in files
 activities <- read.table(file = "activity_labels.txt",header = FALSE) # Bring in files
 test_subject <- test_x <- read.table("./test/subject_test.txt", header = FALSE) # Bring in files
@@ -49,11 +50,11 @@ activity_y <- rbind(train_y, test_y) # Combined train y and test y
 features_x <- rbind(train_x, test_x) # Combined train x and text x
 
 
-# Step 4: Change Column Names; to ensure all have same amount of rows
+# Step 4: Change Column Names; to ensure all have same amount of rows.
 colnames(subject_train_test) <- "subject"
 colnames(activity_y) <- "active"
 colnames(features_x ) <- t(features[2]) # Take the Second Column values of features variable
-                                        # Assign it to each Column variable 
+# Assign it to each Column variable 
 
 
 # Step 5: Combine Create Complete Data Set and then Sort
