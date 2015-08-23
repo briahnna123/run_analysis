@@ -17,3 +17,6 @@ Data Breakdown: <br />
 7. subject_train.txt:   <br />
 8. X_train.txt: " Training set."  <br />
 9. y_train.txt: "Training labels."  <br />
+
+# Data Alterations/Transformations
+
