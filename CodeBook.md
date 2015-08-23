@@ -32,3 +32,6 @@ X_train.txt --> train_x  <br />
 X_test.txt, --> test_x  <br />
 y_train.txt --> train_y  <br />
 y_test.txt --> test_y  <br />
+train_x merge test_x --> features_x <br />
+train_y merge test_y --> activity_y <br />
+train_subject merge test_subjec --> subject_train_test <br />
