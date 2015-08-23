@@ -19,13 +19,9 @@ Data Breakdown: <br />
 9. y_train.txt: "Training labels."  <br />
 
 # Data Alterations/Transformations
-Read the following: 
-``` ruby
-features.txt, activity_labels.txt, subject_test.txt, subject_train.txt,
-``` 
-```ruby
-X_train.txt, X_test.txt, y_train.txt, y_test.txt 
-```
-into a table.
+The following text:  <br />
+features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, <br />
+X_train.txt, X_test.txt, y_train.txt, y_test.txt <br />
+were read into a table. Then converted to data frame by dplyr package for easier manipulation.
 
 
