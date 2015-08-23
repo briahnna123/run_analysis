@@ -1,6 +1,6 @@
 # Run Analysis Assignment
 # Coursera Getting and Cleaning Data Assignment  <br />
-**The Following Directions were taking from the Johns Hopkins Coursera Data Sciene Specialization verbatim
+**The Following Directions were taking from the Johns Hopkins Coursera Data Sciene Specialization verbatim  <br />
 ***Important Note: My explination of how all of the scripts work and how they are connected starts on Line 48.  <br />
 
 # Introduction
