@@ -23,4 +23,12 @@ The following text files:  <br />
 features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, X_train.txt, X_test.txt, y_train.txt, y_test.txt <br />
 were read into a table. Then converted to data frame by dplyr package for easier manipulation.
 
-
+All files were remanmed as follows:  <br />
+features.txt --> features  <br />
+activity_labels.txt --> activities  <br />
+subject_test.txt --> test_subject  <br />
+subject_train.txt --> train_subject  <br />
+X_train.txt --> train_x  <br />
+X_test.txt, --> test_x  <br />
+y_train.txt --> train_y  <br />
+y_test.txt --> test_y  <br />
