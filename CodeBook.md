@@ -21,7 +21,8 @@ Data Breakdown: <br />
 # Data Alterations/Transformations
 Read the following: 
 ``` ruby
-features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, X_train.txt, X_test.txt, y_train.txt, y_test.txt 
+features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, <br />
+X_train.txt, X_test.txt, y_train.txt, y_test.txt 
 ```
 into a table.
 
