@@ -8,12 +8,12 @@ Original Source [UCI] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Rec
 <br />
 Data Breakdown: <br />
 
-1. activity_labels.txt
-2. features_info.txt
-3. features.txt
-4. subject_test.txt
-5. X_test.txt
-6. y_test.txt
-7. subject_train.txt
-8. X_train.txt
-9. y_train.txt
+1. activity_labels.txt: "Links the class labels with their activity name."  <br />
+2. features_info.txt: "Shows information about the variables used on the feature vector"; it gives "The complete list of variables of each feature vector is available in 'features.txt'"
+3. features.txt: "List of all features."  <br />
+4. subject_test.txt: Information regareding the subject  <br />
+5. X_test.txt: "Test set."  <br />
+6. y_test.txt: "Test labels."  <br />
+7. subject_train.txt:   <br />
+8. X_train.txt: " Training set."  <br />
+9. y_train.txt: "Training labels."  <br />
