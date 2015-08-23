@@ -6,7 +6,8 @@ Specifically, this book details the run_analyis.R changes to the raw data transf
 Zip file Citation of Data: [Source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) <br />
 Original Source [UCI] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 <br />
-Data Breakdown: <br />
+
+# Data Breakdown: <br />
 
 1. activity_labels.txt: "Links the class labels with their activity name."  <br />
 2. features_info.txt: "Shows information about the variables used on the feature vector";  <br /> it gives, "The complete list of variables of each feature vector is available in 'features.txt'"
