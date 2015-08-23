@@ -19,5 +19,9 @@ Data Breakdown: <br />
 9. y_train.txt: "Training labels."  <br />
 
 # Data Alterations/Transformations
-Read the following: features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, X_train.txt, X_test.txt, y_train.txt, y_test.txt into a table.
+Read the following: 
+``` blue 
+features.txt, activity_labels.txt, subject_test.txt, subject_train.txt, X_train.txt, X_test.txt, y_train.txt, y_test.txt 
+```
+into a table.
 
