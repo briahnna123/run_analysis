@@ -1,7 +1,7 @@
 # Run Analysis Assignment
 # Coursera Getting and Cleaning Data Assignment  <br />
 **The Following Directions were taking from the Johns Hopkins Coursera Data Sciene Specialization verbatim
-
+***Important Note: My explination of how all of the scripts work and how they are connected starts on Line 48.  <br />
 
 # Introduction
 
@@ -11,25 +11,17 @@ One of the most exciting areas in all of data science right now is wearable comp
 <br /> (Coursera, Johns Hopkins, Jeff Leek)
 
 ## Assignment
+
 You should create one R script called run_analysis.R that does the following. 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement. 
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive variable names. 
-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 <br /> (Coursera, Johns Hopkins, Jeff Leek)
 
-# Directions 
-You should create one R script called run_analysis.R that does the following. <br />
-1. Merges the training and the test sets to create one data set. <br />
-2. Extracts only the measurements on the mean and standard deviation for each measurement. <br />
-3. Uses descriptive activity names to name the activities in the data set <br />
-4. Appropriately labels the data set with descriptive variable names. <br />
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.<br />
-<br /> (Coursera, Johns Hopkins, Jeff Leek)
 
-## Background:
-
+## Background about Raw Data:
 
 Data Set Information:
 
@@ -37,9 +29,10 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.<br /> 
 
-Check the README.txt file for further details about this dataset. <br /> 
+Check the README.txt file for further details about this dataset.**Note this text is not included go to the Coursera Website for Offical README.txt <br /> 
 
-A video of the experiment including an example of the 6 recorded activities with one of the participants can be seen in the following link: [Web Link] <br /> 
+A video of the experiment including an example of the 6 recorded activities with one of the participants can be seen in the following link: [Web Link] **Note this Video is not included go to the Coursera Website
+for the Offical Link <br /> 
 
 
 Attribute Information:
@@ -52,14 +45,49 @@ For each record in the dataset it is provided:
 - An identifier of the subject who carried out the experiment. <br /> 
 [UCI Citation](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-# Data Breakdown: <br />
+# My Data Analysis Data Breakdown: <br />
 
-1. activity_labels.txt: "Links the class labels with their activity name."  <br />
-2. features_info.txt: "Shows information about the variables used on the feature vector";  <br /> it gives, "The complete list of variables of each feature vector is available in 'features.txt'"
+# Explination of raw data files: <br />
+
+1. activity_labels.txt: Links the class labels with their activity name.  <br />
+Activities include: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.  <br />
+
+2. features_info.txt: Shows information about the variables used on the feature vector. <br /> 
+It gives, The complete list of variables of each feature vector is available in 'features.txt'.  <br /> 
+This includes the Statistics Summary Features: 
+
 3. features.txt: "List of all features."  <br />
-4. subject_test.txt: Information regareding the subject  <br />
-5. X_test.txt: "Test set."  <br />
-6. y_test.txt: "Test labels."  <br />
-7. subject_train.txt:   <br />
-8. X_train.txt: " Training set."  <br />
-9. y_train.txt: "Training labels."  <br />
+
+4. subject_test.txt: Information regareding the Subject.  <br />
+There were 30 volunteers seperate into Groups. <br />
+
+5. X_test.txt: The Testing   <br />
+
+6. y_test.txt: The Test Labels; Activites for Testing  <br />
+
+7. subject_train.txt: Information Regarding the Subjects  <br />
+
+8. X_train.txt: The Training;   <br />
+
+9. y_train.txt: The Training Labels; Activities for Traning  <br />
+
+# Transformation of Variable and File names:  <br />
+Variable: test_set, the X_test.txt file, for Testing  <br />
+Variable: test_set_act, the y_test.txt file, for Activities for Testing  <br />
+Variable: test_sub, the subject_test.txt file, for Info about Subjects  <br />
+Variable: train_set, the X_train.txt file, for Traning  <br />
+Variable: train_set_act, the y_train.txt file, for Activities for Traning  <br />
+Variable: train_sub, the subject_train.txt file, for Info about Subjects  <br />
+Variable: activities, the activity_labels.txt file, for Data on different activities  <br />
+Variable: features, the features.txt file, for Statistics Summary Features of the Activity Variables
+
+# Anaysis/Subsetting:
+Used Traditional Method of Subseting to seperate data; Detail notes can be found in the  <br />
+run_analysis.R file in the this GitHub REPO account or in the CodeBook also attatched to this REPO.
+
+# Output of Files:
+write.table() was Utilized to Produce a text file named "tidy.txt" by comma <br />
+delimited values in file. This file contains Clean/Tidy Data of the average of each variable for each<br /> activity and each subject. <br />
+
+
+
