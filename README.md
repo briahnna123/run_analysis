@@ -87,7 +87,7 @@ mainpulate data values. <br />
 # The Transformation of Complete Table-- Goal was to Combine Testing and Training sets, with their <br />
 Respective Activities & Subjects. <br />
 1. cbind() function for Variables: test_set, test_set_act test_sub # To Mix Testing, Activities, and Subjects <br />
-2. cbind() function for Variables: train_set, train_set_act, train_sub # To Mix Traning Activities and Subjects
+2. cbind() function for Variables: train_set, train_set_act, train_sub # To Mix Traning Activities and Subjects <br />
 3. rbind() function for Variable Completed cbound test_set and train_set # To Mix of Complete Testing and Traning   <br />
 Detail notes can be found in the  run_analysis.R file in the this GitHub REPO account or in the CodeBook also attatched to this REPO. <br />
 
