@@ -43,7 +43,16 @@ There were 30 volunteers seperate into Groups. <br />
 # Data Alterations/Transformations
 All of the text files found in UCI HAR Dataset were read into a table; Specific Names  <br />
 Explained in README.md file.
-All files were remanmed as follows; Specific Names Explained in README.md file.
+All files were remanmed as follows-- Transformation of Variable and File names:  <br />
+Variable: test_set, the X_test.txt file, for Testing  <br />
+Variable: test_set_act, the y_test.txt file, for Activities for Testing  <br />
+Variable: test_sub, the subject_test.txt file, for Info about Subjects  <br />
+Variable: train_set, the X_train.txt file, for Traning  <br />
+Variable: train_set_act, the y_train.txt file, for Activities for Traning  <br />
+Variable: train_sub, the subject_train.txt file, for Info about Subjects  <br />
+Variable: activities, the activity_labels.txt file, for Data on different activities  <br />
+Variable: features, the features.txt file, for Statistics Summary Features of the Activity Variables <br />
+Details Explained in README.md file or run_analysis.R file.
 
 
 # Completed Clean/Tidy Data <br />
