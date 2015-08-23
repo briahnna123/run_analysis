@@ -59,8 +59,8 @@ colnames(features_x ) <- t(features[2]) # Take the Second Column values of featu
 # Step 5: Combine Create Complete Data Set and then Sort
 dataTable <- cbind(as.data.table(features_x, activity_y,subject_train_test ))
 dataTable$activityName <- as.character(dataTable$activityName)
-dataAggr<- aggregate(. ~ subject - activityName, data = dataTable, mean) 
-dataTable<- tbl_df(arrange(dataAggr,subject,activityName))
+dataAggr<- aggregate(. ~ subject - active, data = dataTable, mean) 
+dataTable<- tbl_df(arrange(dataTable,subject,active))
 
 # Step 6: Subset the measurements on the mean and stdev. for each measurement.
 data <- grepl("mean|std", x = names(dataTable), rm.na=TRUE)
@@ -78,7 +78,7 @@ names(dataTable)<-gsub("BodyBody", "Body", names(dataTable))
 # Step 8: Extract, SClean data and save as txt file
 dataTable$subject <- as.factor(dataTable$subject)
 run_analysis <- data.table(dataTable)
-run_analysis<- (run_analysis1%>% group_by(subject, Activity) %>% summarise_each(funs( mean)))
+run_analysis<- (run_analysis1%>% group_by(subject, active) %>% summarise_each(funs( mean)))
 write.table(x = run_analysis, file = "tidy.txt", sep= " " row.names = FALSE)
 
 
