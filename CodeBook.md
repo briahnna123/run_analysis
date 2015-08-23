@@ -28,8 +28,4 @@ X_train.txt, X_test.txt, y_train.txt, y_test.txt
 ```
 into a table.
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+
