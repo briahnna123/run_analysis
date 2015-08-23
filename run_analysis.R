@@ -79,7 +79,7 @@ names(dataTable)<-gsub("BodyBody", "Body", names(dataTable))
 # Step 8: Extract the Clean data and save as txt file
 dataTable$subject <- as.factor(dataTable$subject)
 run_analysis <- data.table(dataTable)
-run_analysis<- (run_analysis1%>% group_by(subject, active) %>% summarise_each(funs( mean)))
+run_analysis<- (run_analysis%>% group_by(subject, active) %>% summarise_each(funs( mean)))
 write.table(x = run_analysis, file = "tidy.txt", sep= " " row.names = FALSE)
 
 
