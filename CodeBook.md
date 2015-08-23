@@ -55,7 +55,7 @@ Details Explained in README.md file or run_analysis.R file.
 
 
 # Completed Clean/Tidy Data <br />
-The file extracted is called "tidy_data.txt". This file contaisn the clean data with the mean and standard deviation for each measurement along with Descriptive Headers. Specific Names Explained in run_analysis.R file.
+The file extracted is called "tidy_data.txt". This file contains the clean data with the mean and standard deviation for each measurement along with Descriptive Headers. Specific Names Explained in run_analysis.R file.
 
 
 
