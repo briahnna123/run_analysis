@@ -25,7 +25,7 @@ Activities include: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STAN
 It gives, The complete list of variables of each feature vector is available in 'features.txt'.  <br /> 
 This includes the Statistics Summary Features: 
 
-3. features.txt: "List of all features."  <br />
+3. features.txt: List of all features.  <br />
 
 4. subject_test.txt: Information regareding the Subject.  <br />
 There were 30 volunteers seperate into Groups. <br />
