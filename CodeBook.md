@@ -41,8 +41,7 @@ There were 30 volunteers seperate into Groups. <br />
 9. y_train.txt: The Training Labels; Activities for Traning  <br />
 
 # Data Alterations/Transformations
-All of the text files found in UCI HAR Dataset were read into a table; Specific Names  <br />
-Explained in README.md file.
+All of the text files found in UCI HAR Dataset were read into a table; Specific Names Explained in README.md file. <br />
 All files were remanmed as follows-- Transformation of Variable and File names:  <br />
 Variable: test_set, the X_test.txt file, for Testing  <br />
 Variable: test_set_act, the y_test.txt file, for Activities for Testing  <br />
