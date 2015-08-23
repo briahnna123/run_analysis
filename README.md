@@ -92,7 +92,7 @@ Detailed notes can be found in the  run_analysis.R file in the this GitHub REPO 
 
 # Output of Files:
 write.table() was Utilized to Produce a text file named "tidy.txt" by comma delimited values in file. <br />
-This file contains Clean/Tidy Data of the average of each variable for each<br /> activity and each subject. <br />
+This file contains Clean/Tidy Data of the average of each variable for each activity and each subject. <br />
 
 
 
