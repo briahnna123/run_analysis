@@ -29,7 +29,8 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.<br /> 
 
-Check the README.txt file for further details about this dataset.**Note this text is not included go to the Coursera Website for Offical README.txt <br /> 
+Check the README.txt file for further details about this dataset. <br /> 
+**Note this text is not included go to the Coursera Website for Offical README.txt <br /> 
 
 A video of the experiment including an example of the 6 recorded activities with one of the participants can be seen in the following link: [Web Link] **Note this Video is not included go to the Coursera Website
 for the Offical Link <br /> 
@@ -84,6 +85,7 @@ Variable: features, the features.txt file, for Statistics Summary Features of th
 # Anaysis/Subsetting:
 Used Traditional Method of Subseting to seperate data; The packages dpylr and data.table were used to <br />
 mainpulate data values. <br />
+
 # The Transformation of Complete Table-- Goal was to Combine Testing and Training sets, with their Respective Activities & Subjects. <br />
 1. cbind() function for Variables: test_set, test_set_act test_sub # To Mix Testing, Activities, and Subjects <br />
 2. cbind() function for Variables: train_set, train_set_act, train_sub # To Mix Traning Activities and Subjects <br />
