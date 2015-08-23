@@ -22,7 +22,7 @@ Data Breakdown: <br />
 Read the following: 
 ``` ruby
 features.txt, activity_labels.txt, subject_test.txt, subject_train.txt,
-``` <br />
+``` 
 ```ruby
 X_train.txt, X_test.txt, y_train.txt, y_test.txt 
 ```
